@@ -19,7 +19,8 @@ const BannerContainer = styled.div`
     padding: 10px;
     width: 950px;
     margin: 0 auto;
-    min-height: 100vh;
+    /* margin-bottom: 100px; */
+    min-height: 80vh;
     /* border: 1px solid white; */
 `
 
@@ -47,7 +48,7 @@ const BannerHighlight = styled.div`
         font-family: 'Poppins', sans-serif;
 
         &:hover {
-            background-color: #ffa940;
+            background-color: #f28e1c;
             color: black;
         }
     }
