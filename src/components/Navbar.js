@@ -40,7 +40,7 @@ const NavContainer = styled.div`
     display: flex;
     align-items: center;
     background-color: #222;
-    padding: 8px 15px;
+    padding: 10px 30px;
     margin-right: 5px;
 `
 
@@ -137,7 +137,7 @@ const AccountButtons = styled.div`
 
             > .MuiSvgIcon-root {
                 font-size: 15px;
-                margin-right: 5px;
+                margin-right: 3px;
             }
         }
 
