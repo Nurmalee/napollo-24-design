@@ -24,7 +24,8 @@ const DownloadContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 80vh;
+    padding-top: 100px;
+    padding-bottom: 200px;
 `
 
 const DownloadText = styled.div`

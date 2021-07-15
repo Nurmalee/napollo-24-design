@@ -40,7 +40,7 @@ export default Navbar
 const NavContainer = styled.div`
     display: flex;
     align-items: center;
-    background-color: #222;
+    background-color: #111;
     padding: 10px 30px;
     width: 100%;
     position: sticky;

@@ -3,10 +3,10 @@ import midBannerImage from '../resources/images/cassette.PNG'
 
 const MidBanner = () => {
     return (
-        <BannerContainer>
+        <MidBannerContainer>
             <div>
                 <BannerImage>
-                    <img src={midBannerImage} alt="" />
+                    <img src={midBannerImage} alt="cassette" />
                 </BannerImage>
 
                 <BannerText>
@@ -16,27 +16,26 @@ const MidBanner = () => {
                         <li>What's hot</li>
                         <li>By genre</li>
                         <li>By location</li>
-                        <li>Lot's more</li>
+                        <li>lots more</li>
                     </ul>
 
-                    <button>Start Listening</button>
+                    <button>Start listening</button>
+
                 </BannerText>
             </div>   
-        </BannerContainer>
+        </MidBannerContainer>
     )
 }
 
 export default MidBanner
 
-const BannerContainer = styled.div`
+const MidBannerContainer = styled.div`
     background-color: #f28e1c;
 
     > div {
         display: flex;
         align-items: center;
-        padding: 100px 40px;
-        width: 85vw;
-        min-width: 900px;
+        padding: 70px 40px;
         margin: 0 auto;
     }
 `
@@ -44,7 +43,9 @@ const BannerContainer = styled.div`
 const BannerImage = styled.div`
     flex: 0.5;
     height: 220px;
-
+    text-align: center;
+    padding-right: 10px;
+   
     > img {
         height: 100%;
         object-fit: contain;
@@ -53,29 +54,27 @@ const BannerImage = styled.div`
 
 const BannerText = styled.div`
     flex: 0.5;
-    padding: 0 30px;
+    padding: 10px 20px;
+    margin-left: auto;
 
     > h1 {
-        color: black;
         font-size: 2.8em;
-        font-weight: 900;
-        margin-bottom: 20px;
+        font-weight: 800;
     }
 
     > ul {
-        margin-top: 20px;
+        margin-bottom: 30px;
         margin-left: 20px;
 
         > li {
-            list-style-type: circle;
+            padding: 3px 0;
         }
     }
 
     > button {
         font-size: 11px;
         border-radius: 20px;
-        margin-top: 20px;
-        padding: 0 40px;
+        padding: 0 50px;
         height: 40px;
         color: white;
         background-color: #222;
@@ -84,9 +83,12 @@ const BannerText = styled.div`
         cursor: pointer;
         transition: 300ms;
         font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        box-shadow: 0 0 10px black;
 
         &:hover {
             background-color: #111;
         }
     }
+
 `
