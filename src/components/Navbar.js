@@ -42,6 +42,12 @@ const NavContainer = styled.div`
     align-items: center;
     background-color: #222;
     padding: 10px 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
 `
 
 const NavLeft = styled.div`

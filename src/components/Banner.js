@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-// import { Button } from '@material-ui/core';
+import busola from '../resources/images/bannerImage.png'
 
 const Banner = () => {
     return (
@@ -9,6 +9,8 @@ const Banner = () => {
 
                 <button>Let's get Started</button>
             </BannerHighlight>
+
+            <img src={busola} alt="" />
             
         </BannerContainer>
     )
@@ -18,24 +20,33 @@ export default Banner
 
 const BannerContainer = styled.div`
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 200px;
     /* border: 1px solid white; */
+    position: relative;
+
+    > img {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        height: 400px;
+    }
 `
 
 const BannerHighlight = styled.div`
-    width: 45%;
+    width: 50%;
 
     > p {
         font-size: 30px;
         font-weight: 700;
         color: white;
+        margin-bottom: 40px;
     }
 
     > button {
         font-size: 11px;
         border-radius: 20px;
-        padding: 0 40px;
+        padding: 0 50px;
         height: 40px;
         color: white;
         background-color: transparent;

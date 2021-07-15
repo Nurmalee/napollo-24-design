@@ -25,7 +25,6 @@ const AboutContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     padding-top: 50px;
     padding-bottom: 200px;
     /* border: 1px solid white; */
@@ -33,13 +32,13 @@ const AboutContainer = styled.div`
 
 const AboutText = styled.div`
     flex: 0.45;
-    padding: 10px;
     /* border: 1px solid white; */
 
     > h1 {
         color: #f28e1c;
-        font-size: 3.2em;
+        font-size: 3em;
         font-weight: 700;
+        margin-bottom: 20px;
     }
 
     > p {
