@@ -5,16 +5,23 @@ import About from './components/About'
 import Download from './components/Download'
 import WhatsHot from './components/WhatsHot'
 import Expansion from './components/Expansion'
+import MidBanner from './components/MidBanner'
 
 function App() {
   return (
     <>
       <Navbar />
+
       <AppBody>
         <Banner />
         <About />
         <WhatsHot />
         <Expansion />
+      </AppBody>
+      
+      <MidBanner />
+
+      <AppBody>
         <Download />
       </AppBody>
     </>
