@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { FavoriteBorder, ArrowForwardIos } from '@material-ui/icons';
 import {albums, singles} from '../musicalAPI'
 import whatshotImg from '../resources/images/whatshot-image.PNG'
 import TrendingMusicals from './TrendingMusicals';

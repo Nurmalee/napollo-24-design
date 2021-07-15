@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import busola from '../resources/images/bannerImage.png'
+import bannerImaga from '../resources/images/bannerImage.png'
 
 const Banner = () => {
     return (
@@ -10,7 +10,7 @@ const Banner = () => {
                 <button>Let's get Started</button>
             </BannerHighlight>
 
-            <img src={busola} alt="" />
+            <img src={bannerImaga} alt="Banner-Imaga" />
             
         </BannerContainer>
     )

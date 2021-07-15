@@ -4,27 +4,24 @@ import Banner from './components/Banner'
 import About from './components/About'
 import Download from './components/Download'
 import WhatsHot from './components/WhatsHot'
-
+import Expansion from './components/Expansion'
 
 function App() {
   return (
-    <AppContainer>
+    <>
       <Navbar />
       <AppBody>
         <Banner />
         <About />
         <WhatsHot />
+        <Expansion />
         <Download />
       </AppBody>
-    </AppContainer>
+    </>
   );
 }
 
 export default App;
-
-const AppContainer = styled.div`
- /* width: 100vw; */
-`
 
 const AppBody = styled.div`
   width: 85vw;
