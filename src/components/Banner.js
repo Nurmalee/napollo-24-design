@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+// import { Button } from '@material-ui/core';
 
 const Banner = () => {
     return (
@@ -17,16 +18,13 @@ export default Banner
 
 const BannerContainer = styled.div`
     padding: 10px;
-    width: 950px;
-    margin: 0 auto;
-    /* margin-bottom: 100px; */
-    min-height: 80vh;
+    padding-top: 50px;
+    padding-bottom: 200px;
     /* border: 1px solid white; */
 `
 
 const BannerHighlight = styled.div`
-    width: 55%;
-    margin-top: 50px;
+    width: 45%;
 
     > p {
         font-size: 30px;
@@ -37,8 +35,8 @@ const BannerHighlight = styled.div`
     > button {
         font-size: 11px;
         border-radius: 20px;
-        padding: 0 25px;
-        height: 32px;
+        padding: 0 40px;
+        height: 40px;
         color: white;
         background-color: transparent;
         border: 1px solid;

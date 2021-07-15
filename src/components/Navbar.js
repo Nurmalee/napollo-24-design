@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 import { Menu, Search, Publish } from '@material-ui/icons';
 import App_Play_Store from '../resources/images/app-play-store.png'
+import Napollo from '../resources/images/Napollo.png'
 
 const Navbar = () => {
     return (
         <NavContainer>
             <NavLeft>
                 <Menu />
-                {/* <img src="" alt="Napollo Logo" /> */}
+                <img src={Napollo} alt="Napollo Logo" height={30} />
             </NavLeft>
 
             <NavSearch>
@@ -17,7 +18,7 @@ const Navbar = () => {
 
             <NavRight>
 
-                <img src={App_Play_Store} alt="Stores Logo" height={25} />
+                <img src={App_Play_Store} alt="Stores Logo" height={30} />
 
                 <AccountButtons>
                     <button>SignUp/Login</button>
@@ -41,16 +42,22 @@ const NavContainer = styled.div`
     align-items: center;
     background-color: #222;
     padding: 10px 30px;
-    margin-right: 5px;
 `
 
 const NavLeft = styled.div`
     flex: 0.15;
     justify-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
 
     > .MuiSvgIcon-root {
         font-size: 20px;
         color: white;
+    }
+
+    > img {
+        margin-left: 25px;
     }
 `
 
@@ -61,7 +68,7 @@ const NavSearch = styled.div`
     display: flex;
     align-items: center;
     padding: 0 15px;
-    height: 27px;
+    height: 35px;
     margin-right: 5px;
 
     > input {
@@ -107,8 +114,8 @@ const AccountButtons = styled.div`
         text-transform: capitalize;
         font-size: 11px;
         border-radius: 20px;
-        padding: 0 25px;
-        height: 27px;
+        padding: 0 35px;
+        height: 35px;
         border: none;
         outline: none;
         margin-right: 5px;
@@ -132,7 +139,6 @@ const AccountButtons = styled.div`
             display: flex;
             align-items: center;
             padding: 0 25px;
-            height: 27px;
             border: 2px solid grey;
 
             > .MuiSvgIcon-root {
