@@ -7,6 +7,7 @@ import WhatsHot from './components/WhatsHot'
 import Expansion from './components/Expansion'
 import MidBanner from './components/MidBanner'
 import Footer from './components/Footer'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
         <Expansion />
       </AppBody>
       
-     
         <MidBanner />
+        <Testimonials />
 
       <AppBody>
         <Download />
@@ -41,7 +42,7 @@ const AppContainer = styled.div`
 
 const AppBody = styled.div`
   width: 85vw;
-  min-width: 900px;
+  min-width: inherit;
   margin: 0 auto;
   padding: 0 40px;
 `

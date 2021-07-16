@@ -46,3 +46,47 @@ export const singles = [
         coverArt: Fly
     }
 ]
+
+export const testimonials = [
+    {
+        comment: "This is the best app I've come across. I was able to upscale my career in less than 10 weeks",
+        name: "French Banton",
+        job: "R&B/Soul",
+        image: ""
+    },
+    {
+        comment: "Being an artiste on Napollo has been a real game changer",
+        name: "Hanna Gosle",
+        job: "Pap Artiste",
+        image: ""
+    },
+    {
+        comment: "Napollo is such a great platform. I'm getting exposure and opportunities that",
+        name: "Banter Man",
+        job: "Rock Artiste",
+        image: ""
+    }
+]
+
+export const artists = [
+    {
+        image: LetsDance,
+        artistName: "Nurman",
+        songTitle: "The Prodigy"
+    },
+    {
+        image: Faded,
+        artistName: "LeeNess",
+        songTitle: "Ecstacy"
+    },
+    {
+        image: Fly,
+        artistName: "Rihanna",
+        songTitle: "Prism"
+    },
+    {
+        image: HateMe,
+        artistName: "John Lenon",
+        songTitle: "Legendary"
+    }
+]

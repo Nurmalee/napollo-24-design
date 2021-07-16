@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import expansion_logo from '../resources/images/expansion-logo.PNG'
 import ExpansionArtist from './ExpansionArtist'
+import { artists } from '../musicalAPI'
 
 const Expansion = () => {
     return (
@@ -14,10 +15,13 @@ const Expansion = () => {
 
                 <p>Discover artistes all around the world by their location via the expansion page. Also, get to know the top artistes in any location on the globe.</p>
 
-                <ExpansionArtist />
-                <ExpansionArtist />
-                <ExpansionArtist />
-                <ExpansionArtist />
+                {
+                    artists.map((artist, idx) => {
+                        return (
+                            <ExpansionArtist key={idx} id={idx} {...artist} />
+                        )
+                    })
+                }
             </ExpansionText>
             
         </ExpansionContainer>

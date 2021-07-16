@@ -13,10 +13,10 @@ const TrendingMusicals = ({heading, category}) => {
 
             <MusicArea>
                 {
-                    category.map(song => {
+                    category.map((song, idx) => {
                         const {title, singer, likes, coverArt} = song;
                         return (
-                            <Music>
+                            <Music key={idx}>
                                 <img src={coverArt} alt={title} />
 
                                 <div>

@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 import { Favorite } from '@material-ui/icons'
-import Faded from '../resources/images/Music_Art2.PNG'
 
-const ExpansionArtist = () => {
+
+const ExpansionArtist = ({id, image, artistName, songTitle}) => {
     return (
         <Artist>
-            <h2>01</h2>
-            <img src={Faded} alt="" height={70} />
+            <h2>{id < 10 ? `0 ${id + 1}` : id + 1}</h2>
+            <img src={image} alt="" height={70} />
             <div>
-                <p>Lights Out</p>
-                <p>ColdPlay</p>
+                <p>{songTitle}</p>
+                <p>{artistName}</p>
             </div>
             <Favorite />
         </Artist>
@@ -33,6 +33,11 @@ const Artist = styled.div`
 
     img {
         margin-right: 20px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.95);
+        }
     }
 
     > div {
@@ -42,12 +47,21 @@ const Artist = styled.div`
             padding: 5px 0;
             font-size: 13px;
             color: #777;
+
+            &:first-of-type {
+                color: #BBB;
+            }
         }
     }
 
     > .MuiSvgIcon-root {
         font-size: 20px;
         color: #777;
+        cursor: pointer;
+
+        &:hover {
+            color: #f28e1c;
+        }
     }
 
     &:nth-of-type(2) {

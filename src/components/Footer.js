@@ -82,7 +82,7 @@ const Footer = () => {
 
 export default Footer
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
     background-color: #222;
     display: flex;
     align-items: center;
@@ -130,6 +130,7 @@ const FooterLinks = styled.div`
             text-transform: capitalize;
             font-weight: 400;
             padding: 7px 0;
+            cursor: pointer;
         }
 
         @media screen and (max-width: 600px) {
