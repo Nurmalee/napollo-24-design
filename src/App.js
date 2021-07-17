@@ -8,6 +8,7 @@ import Expansion from './components/Expansion'
 import MidBanner from './components/MidBanner'
 import Footer from './components/Footer'
 import Testimonials from './components/Testimonials'
+import Plans from './components/Plans' 
 
 function App() {
   return (
@@ -23,6 +24,11 @@ function App() {
       </AppBody>
       
         <MidBanner />
+
+        <AppBody>
+          <Plans />
+        </AppBody>
+
         <Testimonials />
 
       <AppBody>
