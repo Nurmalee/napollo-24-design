@@ -8,7 +8,7 @@ const Navbar = () => {
         <NavContainer>
             <NavLeft>
                 <Menu />
-                <img src={Napollo} alt="Napollo Logo" height={30} />
+                <img src={Napollo} alt="Njibutaaa" height={30} />
             </NavLeft>
 
             <NavSearch>
