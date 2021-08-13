@@ -133,12 +133,12 @@ const FooterLinks = styled.div`
             cursor: pointer;
         }
 
-        /* @media screen and (max-width: 800px) {
+        @media screen and (max-width: 800px) {
             flex: 0.7;
             &:nth-of-type(4) {
                 display: none;
             }
-        } */
+        }
     }
 `
 
